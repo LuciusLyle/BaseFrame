@@ -55,8 +55,7 @@ public abstract class BaseFragment extends Fragment implements IBaseView {
     int setLayout();
 
     protected abstract void initViews(@Nullable Bundle savedInstanceState);
-    private void lazyInit(){
-        
+    protected void lazyInit(){
     }
 
     @SuppressWarnings("ConstantConditions")

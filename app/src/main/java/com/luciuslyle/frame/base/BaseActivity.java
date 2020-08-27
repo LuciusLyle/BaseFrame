@@ -17,9 +17,8 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     private ProxyActivity mProxyActivity;
     
     
-    protected abstract void initLayout(@Nullable Bundle savedInstanceState);
 
-    protected abstract void initViews();
+    protected abstract void initViews(@Nullable Bundle savedInstanceState);
 
     protected abstract void initData();
 
@@ -33,10 +32,9 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initLayout(savedInstanceState);
         mProxyActivity = createProxyActivity();
         mProxyActivity.bindPresenter();
-        initViews();
+        initViews(savedInstanceState);
         initData();
     }
 
