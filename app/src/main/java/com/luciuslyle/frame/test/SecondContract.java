@@ -1,9 +1,9 @@
-package com.luciuslyle.frame;
+package com.luciuslyle.frame.test;
 
 
 import com.luciuslyle.frame.base.IBasePresenter;
 import com.luciuslyle.frame.base.IBaseView;
-import com.luciuslyle.frame.model.Callback;
+import com.luciuslyle.frame.test.Callback;
 
 public interface SecondContract {
     interface ISecondModel {

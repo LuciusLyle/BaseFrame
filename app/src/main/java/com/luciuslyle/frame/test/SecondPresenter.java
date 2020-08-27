@@ -1,12 +1,12 @@
-package com.luciuslyle.frame.presenter;
+package com.luciuslyle.frame.test;
 
 
 import android.util.Log;
 
-import com.luciuslyle.frame.SecondContract;
+import com.luciuslyle.frame.test.SecondContract;
 import com.luciuslyle.frame.base.BasePresenter;
-import com.luciuslyle.frame.model.Callback;
-import com.luciuslyle.frame.model.SecondModel;
+import com.luciuslyle.frame.test.Callback;
+import com.luciuslyle.frame.test.SecondModel;
 
 
 public class SecondPresenter extends BasePresenter<SecondContract.ISecondView, SecondModel> implements SecondContract.ISecondPresenter {

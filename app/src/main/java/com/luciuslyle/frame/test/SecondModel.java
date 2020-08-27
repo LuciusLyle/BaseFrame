@@ -1,9 +1,8 @@
-package com.luciuslyle.frame.model;
+package com.luciuslyle.frame.test;
 
 
 import android.util.Log;
 
-import com.luciuslyle.frame.SecondContract;
 import com.luciuslyle.frame.base.BaseModel;
 
 public class SecondModel extends BaseModel implements SecondContract.ISecondModel {
