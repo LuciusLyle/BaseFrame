@@ -1,4 +1,4 @@
-package com.luciuslyle.frame.view;
+package com.luciuslyle.frame.test;
 
 import android.os.Bundle;
 

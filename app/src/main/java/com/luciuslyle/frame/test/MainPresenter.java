@@ -1,15 +1,15 @@
-package com.luciuslyle.frame.presenter;
+package com.luciuslyle.frame.test;
 
 import android.util.Log;
 
 
-import com.luciuslyle.frame.MainContract;
+import com.luciuslyle.frame.test.MainContract;
 import com.luciuslyle.frame.base.BasePresenter;
-import com.luciuslyle.frame.model.DataModel;
-import com.luciuslyle.net.demo.UserService;
-import com.luciuslyle.net.http.RetrofitHelper;
-import com.luciuslyle.net.http.RetrofitServiceManager;
-import com.luciuslyle.net.http.call.RequestCallback;
+import com.luciuslyle.frame.test.DataModel;
+//import com.luciuslyle.net.demo.UserService;
+//import com.luciuslyle.net.http.RetrofitHelper;
+//import com.luciuslyle.net.http.RetrofitServiceManager;
+//import com.luciuslyle.net.http.call.RequestCallback;
 
 
 

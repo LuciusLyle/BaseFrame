@@ -1,7 +1,6 @@
-package com.luciuslyle.frame.model;
+package com.luciuslyle.frame.test;
 
 
-import com.luciuslyle.frame.MainContract;
 import com.luciuslyle.frame.base.BaseModel;
 
 /**

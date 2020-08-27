@@ -1,4 +1,4 @@
-package com.luciuslyle.frame.model;
+package com.luciuslyle.frame.test;
 
 /**
  * @author

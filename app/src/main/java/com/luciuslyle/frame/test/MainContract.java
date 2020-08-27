@@ -1,4 +1,4 @@
-package com.luciuslyle.frame;
+package com.luciuslyle.frame.test;
 
 import com.luciuslyle.frame.base.IBasePresenter;
 import com.luciuslyle.frame.base.IBaseView;

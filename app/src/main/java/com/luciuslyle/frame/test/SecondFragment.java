@@ -1,4 +1,4 @@
-package com.luciuslyle.frame.view;
+package com.luciuslyle.frame.test;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -6,13 +6,9 @@ import android.view.View;
 import android.widget.Button;
 
 
-import com.luciuslyle.frame.MainContract;
 import com.luciuslyle.frame.R;
-import com.luciuslyle.frame.SecondContract;
 import com.luciuslyle.frame.base.BaseFragment;
 import com.luciuslyle.frame.inject.InjectPresenter;
-import com.luciuslyle.frame.presenter.MainPresenter;
-import com.luciuslyle.frame.presenter.SecondPresenter;
 
 import androidx.annotation.Nullable;
 
@@ -43,9 +39,6 @@ public class SecondFragment extends BaseFragment implements SecondContract.ISeco
         });
     }
 
-    @Override
-    protected void initData() {
-    }
 
     @Override
     public void showDialog() {
