@@ -4,6 +4,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,6 +17,9 @@ import com.luciuslyle.frame.inject.InjectPresenter;
 import com.luciuslyle.frame.presenter.MainPresenter;
 
 import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.Lifecycle;
 
 
 public class MainActivity extends BaseActivity implements MainContract.IMainView {
@@ -30,16 +34,21 @@ public class MainActivity extends BaseActivity implements MainContract.IMainView
         setContentView(R.layout.activity_main);
     }
 
+
+    Toast mToast;
+    int mInt = 0;
+    long oldTime=0;
     @Override
     protected void initViews() {
         tv = findId(R.id.tv);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), SecondActivity.class));
+                //startActivity(new Intent(getContext(), SecondActivity.class));
             }
         });
     }
+
 
     @Override
     protected void initData() {

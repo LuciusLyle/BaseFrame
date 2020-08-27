@@ -21,7 +21,7 @@ public abstract class BasePresenter<V extends IBaseView, M extends BaseModel> im
     /**
      * 管理事件流订阅的生命周期CompositeDisposable
      */
-    private CompositeDisposable compositeDisposable;
+//    private CompositeDisposable compositeDisposable;
     
     @SuppressWarnings({"unchecked", "TryWithIdenticalCatches"})
     @Override
@@ -55,20 +55,20 @@ public abstract class BasePresenter<V extends IBaseView, M extends BaseModel> im
         }
 
     }
-    public void addDisposable(Disposable disposable) {
-        if (disposable!=null){
-            if (compositeDisposable == null){
-                compositeDisposable = new CompositeDisposable();
-            }
-            compositeDisposable.add(disposable);
-        }
-    }    
+//    public void addDisposable(Disposable disposable) {
+//        if (disposable!=null){
+//            if (compositeDisposable == null){
+//                compositeDisposable = new CompositeDisposable();
+//            }
+//            compositeDisposable.add(disposable);
+//        }
+//    }    
     @Override
     public void detach() {
-        if (compositeDisposable != null) {
-            compositeDisposable.clear();
-            compositeDisposable = null;
-        }
+//        if (compositeDisposable != null) {
+//            compositeDisposable.clear();
+//            compositeDisposable = null;
+//        }
 
         mReferenceView.clear();
         mReferenceView = null;
