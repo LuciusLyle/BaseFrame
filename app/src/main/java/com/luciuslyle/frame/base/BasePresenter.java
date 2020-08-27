@@ -10,8 +10,8 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Proxy;
 import java.lang.reflect.Type;
 
-import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
+//import io.reactivex.disposables.CompositeDisposable;
+//import io.reactivex.disposables.Disposable;
 
 public abstract class BasePresenter<V extends IBaseView, M extends BaseModel> implements IBasePresenter {
 
